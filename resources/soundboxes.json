@@ -1,0 +1,79 @@
+{
+  "boxes": [
+    {
+      "title": "Come to the List",
+      "sound": "come-to-list.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Ready to Start",
+      "sound": "ready-to-start.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Fighter Ready?",
+      "sound": "fighters-ready.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Fight",
+      "sound": "fight.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Fight - 2",
+      "sound": "fight-2.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Medic Needed",
+      "sound": "medics-need.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Medics to the List",
+      "sound": "medics-to-list.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Stop Fight",
+      "sound": "stop-fight-2.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "First Round",
+      "sound": "first-round-2.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Second Round",
+      "sound": "second-round.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Third Round",
+      "sound": "third-round.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Next Battle",
+      "sound": "break-before-battle.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Russia",
+      "sound": "russia-victory.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Ukraine",
+      "sound": "ukrainiia.mp3",
+      "icon": "buhurt-app-2.png"
+    },
+    {
+      "title": "Montjoie",
+      "sound": "montjoie-3.mp3",
+      "icon": "buhurt-app-2.png"
+    }
+  ]
+}
