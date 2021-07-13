@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="eu.hithredin.bohurt.soundbox.bohurt_soundbox">
    <application
-        android:label="bohurt_soundbox"
+        android:label="Buhurt Soundboard"
         android:icon="@drawable/ic_launcher">
         <activity
             android:name=".MainActivity"

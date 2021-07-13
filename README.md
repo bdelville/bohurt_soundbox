@@ -1,16 +1,13 @@
-# bohurt_soundbox
+# Buhurt Soundboard
 
-The soundbox that make you feel in the long awaited tourney
+The soundboard that make you feel in the long awaited tourney
 
-## Getting Started
+## Build
 
-This project is a starting point for a Flutter application.
+* Import into Android Studio
+* Add the sounds with the name defined in resources/soundboxes.json
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+flutter build appbundle
+flutter build apk --split-per-abi
+```
