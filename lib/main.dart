@@ -34,16 +34,18 @@ class MyHomePage extends StatelessWidget {
           .map((dataItem) => SoundItem(dataItem, playSound))
           .toList();
 
-      return Scaffold(
-          appBar: AppBar(
-            title: Text('Buhurt Soundboard'),
-          ),
-          body: Center(
-            child: GridView.count(
-                crossAxisCount: 3,
-                children: boxesWidget
+      return LayoutBuilder(builder: (context, constraints){
+        return Scaffold(
+            appBar: AppBar(
+              title: Text('Buhurt Soundboard'),
             ),
-          ));
+            body: Center(
+              child: GridView.count(
+                  crossAxisCount: constraints.maxWidth > 700 ? 4 : 3,
+                  children: boxesWidget
+              ),
+            ));
+      });
     },
   );
 }
@@ -57,15 +59,17 @@ Future<List<SoundItemData>> loadBoxes() async {
       .toList(growable: false);
 }
 
-final audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY)
-  ..setReleaseMode(ReleaseMode.STOP)
+final audioPlayer = AudioPlayer()
+  ..setReleaseMode(ReleaseMode.stop)
   ..setVolume(1.0);
 
 final AudioCache player = AudioCache(
-  prefix: 'resources/sounds/',
-  fixedPlayer: AudioPlayer()..setReleaseMode(ReleaseMode.STOP),
+  prefix: 'resources/sounds/'
 );
 
+
+
 void playSound(SoundItemData dataItem) {
-  player.play("${dataItem.soundRes}");
+  audioPlayer.audioCache = player;
+  audioPlayer.play(AssetSource("${dataItem.soundRes}"));
 }

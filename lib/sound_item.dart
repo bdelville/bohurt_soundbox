@@ -22,11 +22,6 @@ class SoundItem extends StatelessWidget {
   final SoundItemData data;
   final SoundItemCallback onSoundSelected;
 
-  final AudioCache audioCache = AudioCache(
-    prefix: 'resources/sounds/',
-    fixedPlayer: AudioPlayer()..setReleaseMode(ReleaseMode.STOP),
-  );
-
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -43,7 +38,6 @@ class SoundItem extends StatelessWidget {
       ),
       onTap: () {
         onSoundSelected(data);
-        // audioCache.play("${data.soundRes}");
       },
     );
   }
