@@ -14,3 +14,11 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+## Signing
+
+```bash
+keytool -genkeypair -alias myalias -keyalg RSA -keysize 2048 -validity 9125 -keystore my-key.jks
+keytool -list -v -keystore my-key.jks
+```
